@@ -1,0 +1,163 @@
+/* TODO */
+body {
+    margin: 0;
+    min-width:600px;
+ 
+  }
+  
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+  }
+  
+  .todo{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  /* Remove margins and padding from the list */
+  ul {
+    width: 90%;
+    margin: 2;
+    padding: 0;
+    border-radius: 10px
+  }
+
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+
+  ul li:hover {
+    background: #ddd;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #d36962;
+    color: white;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #b97a76;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+  }
+  @media screen and (max-width: 500px){
+    .header {
+      
+        background-color: #b97a76;
+        color: white;
+        text-align: center;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+      }
+      .addBtn {
+        padding: 15px 0px;
+ 
+        background: #d9d9d9;
+        color: #555;
+        float: right;
+        text-align: left;
+        font-size: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 0;
+      }
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  input {
+
+    border: none;
+    border-radius: 0;
+    width: 80%;
+    padding: 17px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  .addBtn {
+    padding: 12px 2px;
+    width: 20%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+/* Bookmark links */
+h3{
+    text-align: center; 
+}
+ h1, h2, h4{
+    text-align: center;
+    color: rgb(124, 6, 6);
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+textarea{
+width: 100%;
+border: 2px solid gray;
+}
+
+#button{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    background-color: #bbb;
+    color: #ad2117;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: rgb(129, 126, 126);
+    color: rgb(229, 231, 210);
+}
+
+/* Quotes */
+.quotes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 2px;
+}
+
